@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/Navbar";
-import { FloatingWhatsApp } from "@/components/WhatsAppCTA";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { PainSection } from "@/components/sections/PainSection";
 import { MechanismSection } from "@/components/sections/MechanismSection";
@@ -24,7 +23,6 @@ const Index = () => (
       <FinalCTASection />
     </main>
     <FooterSection />
-    <FloatingWhatsApp />
   </>
 );
 

@@ -1,12 +1,12 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import { MessageCircle, Search, ClipboardList, Sparkles } from "lucide-react";
+import { WhatsAppCTA, WhatsAppIcon } from "@/components/WhatsAppCTA";
+import { Search, ClipboardList, Sparkles } from "lucide-react";
 
 const steps = [
-  { icon: MessageCircle, number: "1", title: "Entre em contato", desc: "Mande uma mensagem no WhatsApp. Nossa equipe responde rapidamente." },
-  { icon: Search, number: "2", title: "Avaliação individualizada", desc: "A Dra. Débora analisa seu caso, entende sua necessidade e apresenta as melhores opções." },
-  { icon: ClipboardList, number: "3", title: "Plano personalizado", desc: "Você recebe um planejamento claro: o que será feito, como, em quanto tempo e com qual investimento." },
-  { icon: Sparkles, number: "4", title: "Realize o implante", desc: "Com segurança, tecnologia e o acompanhamento de quem já fez isso mais de 7.000 vezes." },
+  { icon: null, isWhatsApp: true, number: "1", title: "Entre em contato", desc: "Mande uma mensagem no WhatsApp. Nossa equipe responde rapidamente." },
+  { icon: Search, isWhatsApp: false, number: "2", title: "Avaliação individualizada", desc: "A Dra. Débora analisa seu caso, entende sua necessidade e apresenta as melhores opções." },
+  { icon: ClipboardList, isWhatsApp: false, number: "3", title: "Plano personalizado", desc: "Você recebe um planejamento claro: o que será feito, como, em quanto tempo e com qual investimento." },
+  { icon: Sparkles, isWhatsApp: false, number: "4", title: "Realize o implante", desc: "Com segurança, tecnologia e o acompanhamento de quem já fez isso mais de 7.000 vezes." },
 ];
 
 export const ProcessSection = () => (
@@ -17,10 +17,10 @@ export const ProcessSection = () => (
       </h2>
 
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
-        {steps.map(({ icon: Icon, number, title, desc }) => (
+        {steps.map(({ icon: Icon, isWhatsApp, number, title, desc }) => (
           <div key={number} className="text-center">
             <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent/40 bg-accent/10">
-              <Icon className="h-7 w-7 text-accent" />
+              {isWhatsApp ? <WhatsAppIcon className="h-7 w-7" /> : Icon && <Icon className="h-7 w-7 text-accent" />}
             </div>
             <div className="mb-2 font-display text-4xl font-bold text-accent/60">{number}</div>
             <h3 className="font-display text-lg font-bold text-dark-section-foreground">{title}</h3>
