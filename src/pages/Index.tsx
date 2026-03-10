@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { PainSection } from "@/components/sections/PainSection";
 import { MechanismSection } from "@/components/sections/MechanismSection";
 import { CredibilitySection } from "@/components/sections/CredibilitySection";
-import { SocialProofSection } from "@/components/sections/SocialProofSection";
+// import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
@@ -17,7 +17,7 @@ const Index = () => (
       <PainSection />
       <MechanismSection />
       <CredibilitySection />
-      <SocialProofSection />
+      {/* <SocialProofSection /> */}
       <ProcessSection />
       <FAQSection />
       <FinalCTASection />

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import logo from "@/assets/logo-innovaodonto.png";
 import { WhatsAppIcon } from "@/components/WhatsAppCTA";
 
-const WA_LINK = "https://wa.link/1v1dla";
+const WA_LINK = "https://wa.me/5527999393331";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -13,6 +13,15 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Adiciona a função de disparo aqui também
+  const trackWhatsAppClick = () => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "lead_whatsapp",
+      button_id: "btn-whatsapp-navbar"
+    });
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
@@ -22,6 +31,8 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between py-4">
         <img src={logo} alt="InnovaOdonto" className="h-10 w-auto" />
         <a
+          id="btn-whatsapp-navbar"
+          onClick={trackWhatsAppClick}
           href={WA_LINK}
           target="_blank"
           rel="noopener noreferrer"

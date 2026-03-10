@@ -1,6 +1,6 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { CheckCircle, Award } from "lucide-react";
-import draDebora from "@/assets/dra-debora-placeholder.png";
+import draDebora from "@/assets/topdoctor.jpeg";
 
 const formations = [
   "Cirurgiã-Dentista pela FONF/UFF (2004)",

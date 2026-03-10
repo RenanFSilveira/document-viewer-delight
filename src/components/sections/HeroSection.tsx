@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import draDebora from "@/assets/dra-debora-placeholder.png";
+import draDebora from "@/assets/debora-hero.jpeg";
 import { motion } from "framer-motion";
 
 const badges = [

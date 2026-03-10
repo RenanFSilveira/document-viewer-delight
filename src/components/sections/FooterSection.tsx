@@ -2,14 +2,15 @@ import { Phone, MapPin, Instagram } from "lucide-react";
 import logo from "@/assets/logo-innovaodonto.png";
 import { WhatsAppIcon } from "@/components/WhatsAppCTA";
 
-const WA_LINK = "https://wa.link/1v1dla";
+const WA_LINK = "https://wa.me/5527999393331";
+const INSTA_LINK = "https://www.instagram.com/dradeborarigoni/";
 
 export const FooterSection = () => (
   <footer className="border-t border-border bg-secondary py-12">
     <div className="container">
       <div className="grid gap-8 md:grid-cols-3">
         <div>
-          <img src={logo} alt="InnovaOdonto" className="h-10 w-auto mb-3" />
+          <img src={logo} alt="InnovaOdonto" className="mb-3 h-10 w-auto" />
           <p className="font-body text-sm text-muted-foreground">
             CRO ES-5754 | Dra. Débora Rigoni
           </p>
@@ -23,14 +24,16 @@ export const FooterSection = () => (
           </div>
           <div className="flex items-center gap-2 text-sm text-foreground">
             <Phone className="h-4 w-4 text-primary" />
-            <span className="font-body">(27) 3229-5530 | (27) 99939-3331</span>
+            {/* Texto do telefone atualizado */}
+            <span className="font-body">(27) 99939-3331</span>
           </div>
         </div>
         <div className="flex gap-4 md:justify-end">
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground transition hover:brightness-110" aria-label="WhatsApp">
             <WhatsAppIcon className="h-5 w-5" />
           </a>
-          <a href="https://bit.ly/4a4UWBW" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition hover:brightness-110" aria-label="Instagram">
+          {/* Link do Instagram atualizado */}
+          <a href={INSTA_LINK} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition hover:brightness-110" aria-label="Instagram">
             <Instagram className="h-5 w-5" />
           </a>
         </div>
