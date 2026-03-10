@@ -29,7 +29,7 @@ export const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between py-4">
-        <img src={logo} alt="InnovaOdonto" className="h-10 w-auto" />
+        <img src={logo} alt="InnovaOdonto" className="h-16 w-auto" />
         <a
           id="btn-whatsapp-navbar"
           onClick={trackWhatsAppClick}
