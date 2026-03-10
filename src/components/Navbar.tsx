@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import logo from "@/assets/logo-innovaodonto.png";
 import { WhatsAppIcon } from "@/components/WhatsAppCTA";
 
-const WA_LINK = "https://wa.me/5527999393331";
+const WA_LINK = "https://wa.me/5527999393331?text=Ol%C3%A1%2C%20vi%20a%20p%C3%A1gina%20sobre%20implantes%20e%20tenho%20interesse%20em%20entender%20mais.";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -29,7 +29,7 @@ export const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between py-4">
-        <img src={logo} alt="InnovaOdonto" className="h-10 w-auto" />
+        <img src={logo} alt="InnovaOdonto" className="h-16 w-auto" />
         <a
           id="btn-whatsapp-navbar"
           onClick={trackWhatsAppClick}
