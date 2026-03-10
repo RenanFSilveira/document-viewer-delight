@@ -1,5 +1,6 @@
-import { Phone, MapPin, Instagram, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Instagram } from "lucide-react";
 import logo from "@/assets/logo-innovaodonto.png";
+import { WhatsAppIcon } from "@/components/WhatsAppCTA";
 
 const WA_LINK = "https://wa.link/1v1dla";
 
@@ -27,7 +28,7 @@ export const FooterSection = () => (
         </div>
         <div className="flex gap-4 md:justify-end">
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground transition hover:brightness-110" aria-label="WhatsApp">
-            <MessageCircle className="h-5 w-5" />
+            <WhatsAppIcon className="h-5 w-5" />
           </a>
           <a href="https://bit.ly/4a4UWBW" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition hover:brightness-110" aria-label="Instagram">
             <Instagram className="h-5 w-5" />

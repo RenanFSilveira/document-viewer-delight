@@ -1,6 +1,5 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import { MessageCircle } from "lucide-react";
+import { WhatsAppCTA, WhatsAppIcon } from "@/components/WhatsAppCTA";
 
 export const FinalCTASection = () => (
   <AnimatedSection className="bg-dark-section py-20 md:py-28">
@@ -14,7 +13,7 @@ export const FinalCTASection = () => (
 
       <div className="mt-8 flex flex-col items-center gap-4">
         <div className="flex h-20 w-20 items-center justify-center rounded-full bg-whatsapp/20">
-          <MessageCircle className="h-10 w-10 text-whatsapp" />
+          <WhatsAppIcon className="h-10 w-10" />
         </div>
         <WhatsAppCTA label="Falar com a clínica agora" size="lg" />
         <p className="font-body text-sm text-dark-section-foreground/60">

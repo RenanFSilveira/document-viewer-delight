@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-innovaodonto.png";
+import { WhatsAppIcon } from "@/components/WhatsAppCTA";
 
 const WA_LINK = "https://wa.link/1v1dla";
 
@@ -27,7 +27,7 @@ export const Navbar = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-lg bg-whatsapp px-4 py-2 text-sm font-semibold text-whatsapp-foreground transition hover:brightness-110"
         >
-          <MessageCircle className="h-4 w-4" />
+          <WhatsAppIcon className="h-4 w-4" />
           <span className="hidden sm:inline">WhatsApp</span>
         </a>
       </div>
