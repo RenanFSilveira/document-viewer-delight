@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import draDebora from "@/assets/debora-hero.jpeg";
+import draDebora from "@/assets/debora-hero.png";
 import { motion } from "framer-motion";
 
 const badges = [
@@ -38,11 +38,11 @@ export const HeroSection = () => (
           className="order-1 flex justify-center md:order-2"
         >
           <div className="relative">
-            <div className="absolute -inset-4 rounded-full bg-primary/10 blur-3xl" />
+            <div className="absolute  rounded-full  blur-3xl" />
             <img
               src={draDebora}
               alt="Dra. Débora Rigoni — Cirurgiã-Dentista"
-              className="relative z-10 w-72 md:w-96 drop-shadow-xl"
+              className="relative z-10 w-72 md:w-96 aspect-[3/4] object-cover rounded-2xl drop-shadow-xl"
               loading="eager"
             />
           </div>
