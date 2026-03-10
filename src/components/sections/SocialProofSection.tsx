@@ -30,7 +30,7 @@ export const SocialProofSection = () => (
       <div className="mx-auto mt-12 max-w-2xl rounded-2xl border border-primary/20 bg-primary/5 p-8 text-center">
         <div className="mb-3 flex justify-center gap-1">
           {Array.from({ length: 5 }).map((_, i) => (
-            <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            <Star key={i} className="h-5 w-5 fill-star text-star" />
           ))}
         </div>
         <blockquote className="font-body text-lg italic text-foreground">
