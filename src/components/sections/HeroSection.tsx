@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const badges = [
   "18 anos de experiência",
   "+7.000 pacientes atendidos",
-  "Especialista em Implantodontia",
+  "Equipe especializada em Implantodontia",
 ];
 
 export const HeroSection = () => (
@@ -20,11 +20,11 @@ export const HeroSection = () => (
           className="order-2 md:order-1"
         >
           <h1 className="font-display text-4xl font-bold leading-tight text-foreground md:text-5xl lg:text-[3.4rem] lg:leading-[1.15]">
-            Recupere seu dente com implante e volte a{" "}
+            Recupere seu sorriso com implante e volte a{" "}
             <span className="text-primary">sorrir, mastigar e viver</span> sem limitações
           </h1>
           <p className="mt-5 max-w-lg font-body text-lg text-muted-foreground">
-            Dra. Débora Rigoni — 18 anos de experiência, especialização em implantodontia e mais de 7.000 pacientes atendidos em Vila Velha/ES
+            Dra. Débora Rigoni — 18 anos de experiência guiando tratamentos, contando com uma equipe de cirurgiões especialistas e mais de 7.000 pacientes atendidos em Vila Velha/ES
           </p>
           <div className="mt-8">
             <WhatsAppCTA label="Agendar avaliação pelo WhatsApp" size="lg" />

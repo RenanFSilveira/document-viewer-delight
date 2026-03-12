@@ -11,7 +11,7 @@ const cards = [
   {
     icon: ShieldCheck,
     title: "Experiência que gera segurança",
-    description: "Com 18 anos de atuação, especialização em implantodontia e mais de 7.000 pacientes, a Dra. Débora já viu e resolveu casos complexos que outros profissionais descartaram.",
+    description: "Com 18 anos de atuação e mais de 7.000 pacientes, a Dra. Débora e sua equipe de cirurgiões de confiança já planejaram e resolveram casos complexos que outros profissionais descartaram.",
   },
   {
     icon: HeartHandshake,

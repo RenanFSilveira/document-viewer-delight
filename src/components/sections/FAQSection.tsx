@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "Tenho medo de sentir dor durante a cirurgia",
-    a: "A cirurgia de implante é realizada com anestesia local e é muito menos desconfortável do que a maioria das pessoas imagina. A Dra. Débora prioriza o conforto do paciente em todos os momentos. O pós-operatório costuma ser tranquilo, com orientações claras para cada etapa.",
+    a: "A cirurgia de implante é realizada por nossos especialistas com anestesia local e é muito menos desconfortável do que a maioria das pessoas imagina. Nossa equipe prioriza o conforto do paciente em todos os momentos. O pós-operatório costuma ser tranquilo, com orientações claras para cada etapa.",
   },
   {
     q: "Será que meu caso tem solução? Já me disseram que não tenho osso suficiente",
